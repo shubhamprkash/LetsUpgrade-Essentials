@@ -1,0 +1,36 @@
+package students;
+import java.util.*;
+public class student {
+	public static void main (String args[])
+	{
+		int eng,math,sci,comp,gk;
+		int sum;
+		float per;
+		System.out.println("subject       marks");
+		Scanner sc=new Scanner(System.in);
+		eng=sc.nextInt();
+		System.out.println("English       "+eng);
+	    math=sc.nextInt();
+		System.out.println("Mathamatics       "+math);
+		sci=sc.nextInt();
+		System.out.println("Science       "+sci);
+		comp=sc.nextInt();
+		System.out.println("Computer       "+comp);
+		gk=sc.nextInt();
+		System.out.println("General knowledge       "+gk);
+		sum=eng+math+sci+comp+gk;
+		System.out.println(sum);
+		per=sum*100/500;
+		System.out.println(per);
+		if(per>80&&per<100)
+			System.out.println("Grade  A");
+		else if(per>60&&per<80)
+	        System.out.println("Grade  B");
+		else if(per>40&&per<60)
+			System.out.println("Grade    C");
+		else
+			System.out.println("Grade    Fail");
+	}
+	
+
+}
