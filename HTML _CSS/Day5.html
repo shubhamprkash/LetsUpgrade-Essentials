@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Audio Player</title>
+ <style>
+   *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg{
+    padding:30px;
+    background:linear-gradient(315deg,#485461 0%,#28313b 74%);
+}
+
+@font-face {
+    font-family: rock;
+    src: url("./rock-it/Rockit.ttf");
+}
+
+.logo{
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    font-size: 30px;
+    color: white;
+    font-family: rock;
+    text-align: center;
+}
+
+.search{
+    width: 70%;
+    height: 50px;
+    /* background-color: red; */
+    margin-left: 15%;
+    font-size: 0px;
+  
+}
+
+.search_field{
+    height: 50px;
+    width: 90%;
+    font-size: 20px;
+    font-family: segoe UI;
+    font-weight: 200;
+    text-indent: 30px;
+    vertical-align: top;
+    outline: none;
+    border: none;
+}
+
+.search_btn{
+    border: none;
+    height: 50px;
+    width: 10%;
+    background-color: white;
+}
+
+.search_icon{
+    width: 30px;
+    
+}
+
+.songs{
+    width: 90%;
+    /* background-color: red; */
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 5%;
+}
+
+.song{
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    display: inline-block;
+    margin-left: 4%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.song:hover .song_img{
+    overflow: visible;
+}
+
+.song_img{
+    width: 80%;
+    height: 350px;
+    /* background-color: brown; */
+    margin-left: 10%;
+    overflow: hidden;
+    
+}
+
+.song_player{
+    width: 80%;
+    /* background-color: yellow; */
+    margin-left: 10%;
+    margin-top: 20px;
+    font-family: segoe UI;
+    font-weight: 200;
+    font-size: 30px;
+    
+}
+
+.song_thumbnail{
+    width: 100%;
+    transition: .4s;
+}
+
+.song:hover .song_thumbnail{
+    transform: scale(1.7);
+}
+
+.audio{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width:500px) {
+
+    .search{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .songs{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .song{
+        width: 100%;
+        margin-left:0px ;
+    }
+    
+}
+   
+  </style>
+
+  
+  
+  
+  
+</head>
+<body>
+
+    <section class="bg">
+
+        <div class="logo">
+            metal music
+        </div>
+        
+        <div class="search">
+            <input class="search_field" type="search" placeholder="Search Song">
+            <button class="search_btn">
+                <img class="search_icon" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png"/>
+            </button>
+        </div>
+
+        <section class="songs">
+
+
+            <div class="song">
+                <div class="song_img">
+                    <img class="song_thumbnail" src="https://images.pexels.com/photos/9139846/pexels-photo-9139846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+
+                <div class="song_player">
+                    <p>Bad Guy</p>
+                    <audio controls class="audio">
+                        <source src="./songs/bad-guy.mp3">
+                    </audio>
+                </div>
+
+            </div>
+
+            <div class="song">
+                <div class="song_img">
+                    <img class="song_thumbnail" src="https://images.pexels.com/photos/9183292/pexels-photo-9183292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+
+                <div class="song_player">
+                    <p>Senorita</p>
+                    <audio controls class="audio"></audio>
+                </div>
+
+            </div>
+
+            <div class="song">
+                <div class="song_img">
+                    <img class="song_thumbnail" src="https://images.pexels.com/photos/4587855/pexels-photo-4587855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+
+                <div class="song_player">
+                    <p>Colours</p>
+                    <audio controls class="audio"></audio>
+                </div>
+
+            </div>
+
+            <div class="song">
+                <div class="song_img">
+                    <img class="song_thumbnail" src="https://images.pexels.com/photos/2708981/pexels-photo-2708981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+
+                <div class="song_player">
+                    <p>Arcade</p>
+                    <audio controls class="audio"></audio>
+                </div>
+
+            </div>
+
+            <div class="song">
+                <div class="song_img">
+                    <img class="song_thumbnail" src="https://images.pexels.com/photos/1244627/pexels-photo-1244627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+
+                <div class="song_player">
+                    <p>Sugar</p>
+                    <audio controls class="audio"></audio>
+                </div>
+
+            </div>
+
+            <div class="song">
+                <div class="song_img">
+                    <img class="song_thumbnail" src="https://images.pexels.com/photos/704748/pexels-photo-704748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+
+                <div class="song_player">
+                    <p>Best Love Song</p>
+                    <audio controls class="audio"></audio>
+                </div>
+
+            </div>
+
+            <div class="song">
+                <div class="song_img">
+                    <img class="song_thumbnail" src="https://images.pexels.com/photos/6957993/pexels-photo-6957993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+
+                <div class="song_player">
+                    <p>Finally Found You</p>
+                    <audio controls class="audio"></audio>
+                </div>
+
+            </div>
+
+            <div class="song">
+                <div class="song_img">
+                    <img class="song_thumbnail" src="https://images.pexels.com/photos/7968350/pexels-photo-7968350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+
+                <div class="song_player">
+                    <p>Memories</p>
+                    <audio controls class="audio"></audio>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </section>
+
+
+    
+</body>
+</html>
